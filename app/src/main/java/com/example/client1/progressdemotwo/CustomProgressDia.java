@@ -10,6 +10,8 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
+import com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar;
+
 public class CustomProgressDia extends ProgressDialog
 {
     ImageView outerRingClock;
@@ -20,6 +22,7 @@ public class CustomProgressDia extends ProgressDialog
     Animation clockAnimation;
     Animation aniClockAnimation;
     ImageView rays;
+    DilatingDotsProgressBar mDilatingDotsProgressBar;
 
     public CustomProgressDia(Context context)
     {
@@ -32,6 +35,9 @@ public class CustomProgressDia extends ProgressDialog
         outerRingClock=(ImageView)findViewById(R.id.outerRingClock);
         innerRingAntiClock=(ImageView)findViewById(R.id.innerRingAntiClock);
         rays=(ImageView)findViewById(R.id.raysId);
+        mDilatingDotsProgressBar = (DilatingDotsProgressBar) findViewById(R.id.progress);
+        mDilatingDotsProgressBar.showNow();
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState)

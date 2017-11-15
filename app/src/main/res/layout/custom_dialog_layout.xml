@@ -27,7 +27,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerInParent="true"
-                android:src="@drawable/ic_bank_of_baroda_1"
+                android:src="@drawable/ic_withoutrays"
                  />
             <ImageView
                 android:visibility="visible"
@@ -44,6 +44,19 @@
                 android:src="@drawable/rays_bob"
                 android:layout_centerInParent="true"
                 />
+
+            <com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar
+                android:layout_below="@+id/raysId"
+                android:layout_centerInParent="true"
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="5dp"
+                android:color="#DF5828"
+                app:dd_numDots="3"
+                app:dd_scaleMultiplier="1.5"
+                app:dd_animationDuration="500"
+                app:dd_horizontalSpacing="4dp"/>
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
